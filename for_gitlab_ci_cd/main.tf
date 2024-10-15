@@ -107,7 +107,7 @@ resource "terraform_data" "delete" {
     when       = destroy
     # command    = "ash delete_vm_and_disk.sh"
     interpreter = ["/bin/ash", "-c"]
-    command     = "ash delete_vm_and_disk.sh"
+    command     = "ash destroy.sh"
     on_failure = continue
     environment = {
       RESOURCE_GROUP_NAME = self.input.RESOURCE_GROUP_NAME

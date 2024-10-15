@@ -90,3 +90,5 @@ variable region {}
 # }
 
 variable source_image_id {}
+
+variable global_ip {}
